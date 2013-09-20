@@ -1,0 +1,10 @@
+RewriteEngine on
+
+	RewriteCond %{HTTP_USER_AGENT} iphone|ipad|android|blackberry [NC]
+		RewriteRule ^([a-zA-Z0-9]+).png$ $1.mobile.png
+
+	RewriteCond %{HTTP_USER_AGENT} iphone|ipad|android|blackberry [NC]
+		RewriteRule ^([a-zA-Z0-9]+).jpg$ $1.mobile.jpg
+
+	RewriteCond %{HTTP_USER_AGENT} iphone|ipad|android|blackberry [NC]
+		RewriteRule ^([a-zA-Z0-9]+).gif$ $1.mobile.gif
